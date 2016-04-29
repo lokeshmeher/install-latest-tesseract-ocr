@@ -33,7 +33,6 @@ wget https://github.com/tesseract-ocr/tessdata/blob/master/eng.cube.params
 wget https://github.com/tesseract-ocr/tessdata/blob/master/eng.cube.size
 wget https://github.com/tesseract-ocr/tessdata/blob/master/eng.cube.word-freq
 wget https://github.com/tesseract-ocr/tessdata/blob/master/eng.tesseract_cube.nn
-wget https://github.com/tesseract-ocr/tessdata/blob/master/eng.tesseract_cube.nn
 wget https://github.com/tesseract-ocr/tessdata/blob/master/eng.traineddata
 cd ..
 
@@ -52,7 +51,13 @@ cd ..
 
 # Just one more thing:
 mv tesseract-3.04.01/tessdata/* /usr/local/share/tessdata/
+mv tesseract-3.04.01/tessdata/configs/* /usr/local/share/tessdata/configs/
+mv tesseract-3.04.01/tessdata/tessconfigs/* /usr/local/share/tessdata/tessconfigs/
 	# if asked for overriding mode to overwrite: enter 0755 (rwxr-xr-x)
+
+# Some cleanup after installation:
+rmdir tessdata
+rm -r tesseract-3.04.01/ leptonica-1.73/
 
 # References:
 # https://github.com/tesseract-ocr/tesseract/wiki/Compiling
