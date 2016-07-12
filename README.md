@@ -6,5 +6,5 @@ to github which was previously on code.google.com. Also, I found the wiki provid
 This script will completely install tesseract on Debian Linux.  
 
 #### Note:
-- Change the version numbers and/or names inside the scipt for both tesseract and leptonica (and others if necessary)  
+Change the version numbers and/or names inside the scipt for both tesseract and leptonica (and others if necessary)  
 for the latest versions. The links are in the script.
